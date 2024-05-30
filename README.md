@@ -1,51 +1,51 @@
 # Python Projects for Interviews
 
-Bu depo, iş görüşmelerinde kullanılabilecek çeşitli Python projelerini içermektedir. Her proje, belirli bir problem alanını hedef almakta ve çözüm önerileri sunmaktadır. Aşağıda projelerin kısa açıklamaları ve her birine nasıl erişileceği hakkında bilgiler yer almaktadır.
+This repository contains various Python projects that can be used in job interviews. Each project targets a specific problem area and provides solutions. Below are brief descriptions of the projects and information on how to access each one.
 
-## İçindekiler
+## Contents
 
 - [AutoDataAnalyzer](#autodataanalyzer)
 - [FinancePredictor](#financepredictor)
 
 ## AutoDataAnalyzer
 
-AutoDataAnalyzer projesi, otomatik veri analizi yaparak veri setlerini hızlı bir şekilde özetler ve görselleştirir. Proje, veri bilimciler ve analistler için büyük kolaylık sağlar.
+The AutoDataAnalyzer project performs automatic data analysis, quickly summarizing and visualizing datasets. This project provides great convenience for data scientists and analysts.
 
-- **Özellikler**:
-  - Veri setlerinin otomatik olarak analizi
-  - Görselleştirme ve özetleme
-  - Kolay kullanım arayüzü
+- **Features**:
+  - Automatic analysis of datasets
+  - Visualization and summarization
+  - Easy-to-use interface
 
-Daha fazla bilgi için [AutoDataAnalyzer README dosyasını](./AutoDataAnalyzer/README.md) inceleyin.
+For more information, check the [AutoDataAnalyzer README file](./AutoDataAnalyzer/README.md).
 
 ## FinancePredictor
 
-FinancePredictor projesi, Bitcoin gibi kripto para birimlerinin gelecekteki fiyatlarını tahmin etmek için bir makine öğrenmesi modelini kullanır. Proje, zaman serisi analizine dayanmaktadır.
+The FinancePredictor project uses a machine learning model to predict future prices of cryptocurrencies like Bitcoin. The project is based on time series analysis.
 
-- **Özellikler**:
-  - Geçmiş kripto para birimi fiyat verilerini çekme ve ön işleme
-  - LSTM modeli kullanarak fiyat tahmini yapma
-  - Tahmin sonuçlarını görselleştirme
-  - Model performans metriklerini hesaplama
+- **Features**:
+  - Fetching and preprocessing historical cryptocurrency price data
+  - Predicting prices using an LSTM model
+  - Visualizing prediction results
+  - Calculating model performance metrics
 
-Daha fazla bilgi için [FinancePredictor README dosyasını](./FinancePredictor/README.md) inceleyin.
+For more information, check the [FinancePredictor README file](./FinancePredictor/README.md).
 
-## Kurulum
+## Setup
 
-### Gereksinimler
+### Requirements
 
-- Python 3.7 veya daha yeni bir sürüm
-- Anaconda (tavsiye edilir)
+- Python 3.7 or newer
+- Anaconda (recommended)
 
-### Adımlar
+### Steps
 
-1. Depoyu klonlayın:
+1. Clone the repository:
     ```sh
     git clone https://github.com/fuatorium/Python-Projects-for-Interviews.git
     cd Python-Projects-for-Interviews
     ```
 
-2. Her proje için bağımlılıkları yükleyin. Örneğin, `FinancePredictor` için:
+2. Install dependencies for each project. For example, for `FinancePredictor`:
     ```sh
     cd FinancePredictor
     conda create --name finance-prediction-env python=3.8
@@ -53,10 +53,10 @@ Daha fazla bilgi için [FinancePredictor README dosyasını](./FinancePredictor/
     pip install -r requirements.txt
     ```
 
-## Katkıda Bulunma
+## Contributing
 
-Katkıda bulunmak isterseniz, lütfen bir pull request açın veya bir issue oluşturun. Katkılarınız projeyi geliştirmeye yardımcı olacaktır.
+If you would like to contribute, please open a pull request or create an issue. Your contributions will help improve the project.
 
-## Lisans
+## License
 
-Bu proje MIT Lisansı ile lisanslanmıştır. Daha fazla bilgi için `LICENSE` dosyasına bakın.
+This project is licensed under the MIT License. For more information, see the `LICENSE` file.

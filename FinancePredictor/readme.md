@@ -66,11 +66,11 @@ Modelin tahmin sonuçları ve performans metriklerini içeren görseller aşağ�
 
 ### Gerçek ve Tahmin Edilen Fiyatlar
 
-![Actual vs Predicted](./FinancePredictor/Figure_1.png)
+![Actual vs Predicted](https://github.com/Fuatorium/Python-Projects-for-Interviews/blob/main/FinancePredictor/Figure_1.png)
 
 ### Gelecekteki Tahmin Edilen Fiyatlar
 
-![Future Predictions](./FinancePredictor/Figure_2.png)
+![Future Predictions](https://github.com/Fuatorium/Python-Projects-for-Interviews/blob/main/FinancePredictor/Figure_2.png)
 
 ## Katkıda Bulunma
 
@@ -79,4 +79,3 @@ Katkıda bulunmak isterseniz, lütfen bir pull request açın veya bir issue olu
 ## Lisans
 
 Bu proje MIT Lisansı ile lisanslanmıştır. Daha fazla bilgi için `LICENSE` dosyasına bakın.
-

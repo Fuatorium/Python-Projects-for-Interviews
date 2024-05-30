@@ -1,6 +1,7 @@
 # Smart Surveillance System
 
-![Smart Surveillance System](https://github.com/Fuatorium/Python-Projects-for-Interviews/blob/main/ChatBot/footage.png)
+![Smart Surveillance System](https://github.com/Fuatorium/Python-Projects-for-Interviews/blob/main/Smart%20Surveillance%20System/footage.png)
+
 
 This project is a Smart Surveillance System designed for real-time video stream analysis, including human face recognition, object recognition, and behavior analysis. The system uses machine learning models and computer vision techniques to detect and analyze suspicious behaviors or events and identify specific individuals using facial recognition technology.
 

@@ -7,6 +7,7 @@ This repository contains various Python projects that can be used in job intervi
 - [AutoDataAnalyzer](#autodataanalyzer)
 - [FinancePredictor](#financepredictor)
 - [Smart Surveillance System](#smart-surveillance-system)
+- [FuatGPT.05](#fuatgpt05)
 
 ## AutoDataAnalyzer
 
@@ -42,6 +43,18 @@ The Smart Surveillance System project performs real-time video stream analysis, 
   - Behavior analysis
 
 For more information, check the [Smart Surveillance System README file](./Smart%20Surveillance%20System/README.md).
+
+## FuatGPT.05
+
+The FuatGPT.05 project is a chatbot application using OpenAI's GPT-3.5-turbo model.
+
+- **Features**:
+  - Real-time chat interface
+  - Integration with OpenAI's GPT-3.5-turbo model
+  - Flask backend to handle API requests
+  - React frontend for user interaction
+
+For more information, check the [FuatGPT.05 README file](./FuatGPT.05/README.md).
 
 ## Setup
 

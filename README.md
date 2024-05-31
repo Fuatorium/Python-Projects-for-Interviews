@@ -6,6 +6,7 @@ This repository contains various Python projects that can be used in job intervi
 
 - [AutoDataAnalyzer](#autodataanalyzer)
 - [FinancePredictor](#financepredictor)
+- [Smart Surveillance System](#smart-surveillance-system)
 
 ## AutoDataAnalyzer
 
@@ -29,6 +30,18 @@ The FinancePredictor project uses a machine learning model to predict future pri
   - Calculating model performance metrics
 
 For more information, check the [FinancePredictor README file](./FinancePredictor/README.md).
+
+## Smart Surveillance System
+
+The Smart Surveillance System project performs real-time video stream analysis, including human face recognition, object recognition, and behavior analysis.
+
+- **Features**:
+  - Real-time video stream analysis
+  - Human face recognition
+  - Object recognition
+  - Behavior analysis
+
+For more information, check the [Smart Surveillance System README file](./Smart%20Surveillance%20System/README.md).
 
 ## Setup
 

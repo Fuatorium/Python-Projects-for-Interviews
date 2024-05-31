@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Segment Açıklamaları</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Segment Açıklamaları</h1>
+        <ul>
+            {% for segment, description in segment_descriptions.items() %}
+                <li><strong>Segment {{ segment }}:</strong> {{ description }}</li>
+            {% endfor %}
+        </ul>
+        <h2>Segmentlerin Ortalama Özellikleri</h2>
+        <img src="{{ url_for('static', filename='segment_means.png') }}" alt="Segmentlerin Ortalama Özellikleri">
+    </div>
+</body>
+</html>

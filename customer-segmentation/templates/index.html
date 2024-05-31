@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Müşteri Segmentasyonu</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Müşteri Segmentasyonu</h1>
+        <form id="segmentForm">
+            <label for="age">Yaş:</label>
+            <input type="number" id="age" name="Age" required>
+            <label for="gender">Cinsiyet:</label>
+            <input type="text" id="gender" name="Gender" required>
+            <label for="income">Yıllık Gelir:</label>
+            <input type="number" id="income" name="Annual Income ($)" required>
+            <label for="score">Harcama Puanı:</label>
+            <input type="number" id="score" name="Spending Score (1-100)" required>
+            <label for="profession">Meslek:</label>
+            <input type="text" id="profession" name="Profession" required>
+            <label for="work_experience">İş Tecrübesi:</label>
+            <input type="number" id="work_experience" name="Work Experience" required>
+            <label for="family_size">Aile Büyüklüğü:</label>
+            <input type="number" id="family_size" name="Family Size" required>
+            <button type="submit">Tahmin Et</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script>
+        document.getElementById('segmentForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const formData = new FormData(event.target);
+            fetch('/predict', {
+                method: 'POST',
+                body: new URLSearchParams(formData)
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.error) {
+                    document.getElementById('result').innerText = 'Hata: ' + data.error;
+                } else {
+                    document.getElementById('result').innerText = 'Segment: ' + data.segment + '\n' + 'Açıklama: ' + data.description;
+                }
+            });
+        });
+    </script>
+</body>
+</html>

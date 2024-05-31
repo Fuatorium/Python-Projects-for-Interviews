@@ -8,6 +8,7 @@ This repository contains various Python projects that can be used in job intervi
 - [FinancePredictor](#financepredictor)
 - [Smart Surveillance System](#smart-surveillance-system)
 - [FuatGPT.05](#fuatgpt05)
+- [Customer Segmentation](#customer-segmentation)
 
 ## AutoDataAnalyzer
 
@@ -55,6 +56,18 @@ The FuatGPT.05 project is a chatbot application using OpenAI's GPT-3.5-turbo mod
   - React frontend for user interaction
 
 For more information, check the [FuatGPT.05 README file](./FuatGPT.05/README.md).
+
+## Customer Segmentation
+
+The Customer Segmentation project uses machine learning to categorize customers into different segments based on their demographic and behavioral data.
+
+- **Features**:
+  - Analyzing customer data
+  - Categorizing customers into segments
+  - Providing segment descriptions
+  - Visualizing segment characteristics
+
+For more information, check the [Customer Segmentation README file](https://github.com/Fuatorium/Python-Projects-for-Interviews/blob/main/customer-segmentation/readme.md).
 
 ## Setup
 

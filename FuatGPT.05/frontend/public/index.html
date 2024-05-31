@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chatbot with NLP</title>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-center mt-4">Chat with our Bot</h2>
+        <div class="card mt-4">
+            <div class="card-body">
+                <form id="chat-form">
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <input type="text" id="message" name="message" class="form-control">
+                    </div>
+                    <button type="submit" class="btn btn-primary">SEND</button>
+                </form>
+                <div class="mt-4">
+                    <h4>Bot Response:</h4>
+                    <p id="response"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#chat-form').on('submit', function(event) {
+                event.preventDefault();
+                var message = $('#message').val();
+                $.ajax({
+                    url: '/chat',
+                    method: 'POST',
+                    data: { message: message },
+                    success: function(data) {
+                        $('#response').text(data.response);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

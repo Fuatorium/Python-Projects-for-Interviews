@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adaylar</title>
+</head>
+<body>
+    <h1>Aday Listesi</h1>
+    <ul id="candidate-list"></ul>
+    
+    <h2>Yeni Aday Ekle</h2>
+    <form id="candidate-form">
+        <label for="name">Adı:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="position_applied">Başvurduğu Pozisyon:</label>
+        <input type="text" id="position_applied" name="position_applied" required>
+        <label for="interview_date">Mülakat Tarihi:</label>
+        <input type="date" id="interview_date" name="interview_date">
+        <button type="submit">Ekle</button>
+    </form>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('/candidates')
+                .then(response => response.json())
+                .then(data => {
+                    const list = document.getElementById('candidate-list');
+                    data.forEach(candidate => {
+                        const item = document.createElement('li');
+                        item.textContent = `${candidate.name} - ${candidate.position_applied} - ${candidate.interview_date}`;
+                        list.appendChild(item);
+                    });
+                });
+
+            const form = document.getElementById('candidate-form');
+            form.addEventListener('submit', function(event) {
+                event.preventDefault();
+                const formData = new FormData(form);
+                const data = {};
+                formData.forEach((value, key) => {
+                    data[key] = value;
+                });
+
+                fetch('/candidates', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(data),
+                })
+                .then(response => response.json())
+                .then(result => {
+                    alert(result.message);
+                    location.reload();
+                });
+            });
+        });
+    </script>
+</body>
+</html>

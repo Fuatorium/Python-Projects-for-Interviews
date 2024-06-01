@@ -9,6 +9,7 @@ This repository contains various Python projects that can be used in job intervi
 - [Smart Surveillance System](#smart-surveillance-system)
 - [FuatGPT.05](#fuatgpt05)
 - [Customer Segmentation](#customer-segmentation)
+- [Human Resources Management System (HRMS)](#human-resources-management-system-hrms)
 
 ## AutoDataAnalyzer
 
@@ -68,6 +69,19 @@ The Customer Segmentation project uses machine learning to categorize customers 
   - Visualizing segment characteristics
 
 For more information, check the [Customer Segmentation README file](https://github.com/Fuatorium/Python-Projects-for-Interviews/blob/main/customer-segmentation/readme.md).
+
+## Human Resources Management System (HRMS)
+
+The Human Resources Management System (HRMS) is a web application designed to facilitate the management, tracking, and evaluation of employees and candidates. This application is built using the Flask framework and operates with an SQLite database.
+
+- **Features**:
+  - Add, update, delete, and list employees
+  - Add, update, delete, and list candidates
+  - Employee performance evaluation
+  - Manage candidate interview dates
+  - User-friendly interface
+
+For more information, check the [HRMS README file](https://github.com/Fuatorium/Python-Projects-for-Interviews/blob/main/HRMS/README.md).
 
 ## Setup
 
